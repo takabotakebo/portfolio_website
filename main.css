@@ -170,7 +170,7 @@ header img{
     border-bottom:solid 3px black;
     -webkit-transition: .35s ease-in-out;
     -moz-transition: .35s ease-in-out;
-    transition: .35s ease-in-out
+    transition: .35s ease-in-out;
 }
 
 #navToggle p {
@@ -266,28 +266,34 @@ nav a:hover::before{
 
 /*ファーストビューSectionのスタイル*/
 .firstview{
-    position: fixed;
+    position: relative;
     top:8vh;
     width: 100vw;
-    height:27vh;
+    height:92vh;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
 }
 
 .firstview  img{
     position: relative;
-    height: 80%;
+    height: 60%;
+    top:2%;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
 }
-
 
 .firstview .scroll-down-btn {
     position: absolute;
     bottom: 50px;
     left: calc(50% - 50px/2);
-    width: 50px;1
+    width: 50px;
     cursor: pointer;
 }
 
@@ -297,16 +303,74 @@ nav a:hover::before{
 }
 
 .space-of-firstview{
+    display: none;
     position: relative;
     width: 100vw;
-    height:35vh;
+    height:calc(35vh + 500px);
     display: flex;
+    opacity: 0;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
 }
 
+.firstview-scrolled-fin {
+    position: fixed;
+    top:8vh;
+    width: 100vw;
+    height:27vh;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+
+.firstview-scrolled-5 {
+    position: fixed;
+    top:8vh;
+    width: 100vw;
+    height:30vh;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+
+.firstview-scrolled-4 {
+    position: fixed;
+    top:8vh;
+    width: 100vw;
+    height:34vh;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+.firstview-scrolled-3 {
+    position: relative;
+    top:8vh;
+    width: 100vw;
+    height:42vh;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+.firstview-scrolled-2 {
+    position: relative;
+    top:8vh;
+    width: 100vw;
+    height:50vh;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+
+.display-space5 {
+    display: block;
+    opacity: 0.8;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
 
 /*プロフールSectionのスタイル*/
-
-
 
 .profile{
     display: flex;

@@ -24,6 +24,39 @@ $(function() {
     });
 });
 
+$(function() {
+
+    var $firstview = $(".firstview");
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 160) {
+          $firstview.removeClass('firstview-scrolled-5 firstview-scrolled-4 firstview-scrolled-3 firstview-scrolled-2');
+          $firstview.addClass('firstview-scrolled-fin');
+          $(".space-of-firstview").addClass("display-space");
+        } else if ($(this).scrollTop() > 100) {
+          $firstview.removeClass('firstview-scrolled-fin firstview-scrolled-4 firstview-scrolled-3 firstview-scrolled-2');
+          $firstview.addClass('firstview-scrolled-5');
+          $(".space-of-firstview").addClass("display-space");
+        } else if ($(this).scrollTop() > 40) {
+          $firstview.removeClass('firstview-scrolled-fin firstview-scrolled-5 firstview-scrolled-3 firstview-scrolled-2');
+          $firstview.addClass('firstview-scrolled-4');
+          $(".space-of-firstview").addClass("display-space");
+        } else if ($(this).scrollTop() > 30) {
+          $firstview.removeClass('firstview-scrolled-fin firstview-scrolled-5 firstview-scrolled-4 firstview-scrolled-2');
+          $firstview.addClass('firstview-scrolled-3');
+          $(".space-of-firstview").removeClass("display-space");
+        } else if ($(this).scrollTop() > 20) {
+          $firstview.removeClass('firstview-scrolled-fin firstview-scrolled-5 firstview-scrolled-4 firstview-scrolled-3');
+          $firstview.addClass('firstview-scrolled-2');
+          $(".space-of-firstview").removeClass("display-space");
+        } else {
+          $firstview.removeClass('firstview-scrolled-fin firstview-scrolled-5 firstview-scrolled-4 firstview-scrolled-3 firstview-scrolled-2');
+          $(".space-of-firstview").removeClass("display-space");
+          $firstview.addClass('firstview');
+        }
+    });
+});
+
 $(function () {
 
     //フィルター機能の実装
