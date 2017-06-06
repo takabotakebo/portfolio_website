@@ -282,24 +282,39 @@ nav a:hover::before{
 
 .firstview  img{
     position: relative;
-    height: 60%;
-    top:2%;
+    height: 50%;
+    top:-12%;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.firstview .scroll-down-btn {
+    position: absolute;
+    top: 70vh;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
     -webkit-transition: .8s ease-in-out;
     -moz-transition: .8s ease-in-out;
     transition: .8s ease-in-out;
 }
 
-.firstview .scroll-down-btn {
-    position: absolute;
-    bottom: 50px;
-    left: calc(50% - 50px/2);
-    width: 50px;
-    cursor: pointer;
-}
-
 .firstview .scroll-down-btn:hover {
   -moz-opacity: 0.5;
   opacity: 0.5;
+}
+
+.display-none {
+    display: none;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
 }
 
 .space-of-firstview{
@@ -360,6 +375,15 @@ nav a:hover::before{
     -webkit-transition: .8s ease-in-out;
     -moz-transition: .8s ease-in-out;
     transition: .8s ease-in-out;
+}
+
+.firstview-scrolled-2 ,.firstview-scrolled-3 ,.firstview-scrolled-4 ,.firstview-scrolled-5 ,.firstview-scrolled-fin img{
+  position: relative;
+  height: 50%;
+  top:0%;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .display-space5 {
