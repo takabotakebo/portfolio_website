@@ -4,13 +4,33 @@ $(function() {
     });
 });
 
+$(function() {
+    var topBtn = $('.scroll-top');
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+
 $(function () {
 
     //フィルター機能の実装
     var $filters = $('.filter [data-filter]'),
         $boxes = $('.contents-1st [data-category]');
 
-    
+
     $filters.on('click', function(e) {
       e.preventDefault();
       var $this = $(this);
