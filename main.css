@@ -139,15 +139,15 @@ header{
 }
 
 header img{
-    position:absolute; 
+    position:absolute;
     left:30px;
     top:15px;
     width: 35px;
-    
+
 }
 
 #navToggle {
-    position:absolute; 
+    position:absolute;
     right:30px;
     top:15px;
     width:30px;
@@ -165,7 +165,7 @@ header img{
 
 #navToggle span {
     display:block;
-    position:absolute; 
+    position:absolute;
     width:100%;
     border-bottom:solid 3px black;
     -webkit-transition: .35s ease-in-out;
@@ -175,7 +175,7 @@ header img{
 
 #navToggle p {
     display:block;
-    position:absolute; 
+    position:absolute;
     width:100%;
     top:27px;
 }
@@ -185,9 +185,9 @@ header img{
 #navToggle span:nth-child(3) {top:22px;}
 
 header nav {
-    position: absolute; 
+    position: absolute;
     right:-250px;
-    top: 0px; 
+    top: 0px;
     background-color: rgba(255,255,255,0.8);
     width:200px;
     height: 100vh;
@@ -316,7 +316,7 @@ nav a:hover::before{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 .contents-title{
@@ -461,7 +461,7 @@ nav a:hover::before{
 
 .mainworks div.contents-1st{
     position: relative;
-    width: 80%; 
+    width: 80%;
     min-height: 50vh;
     height: auto;
     margin: 0 auto;
@@ -482,7 +482,7 @@ nav a:hover::before{
 
 .mainworks div.contents-2nd{
     position: relative;
-    width: 80%; 
+    width: 80%;
     min-height: 15vh;
     height: auto;
     margin: 0 auto;
@@ -556,7 +556,7 @@ nav a:hover::before{
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -616,7 +616,7 @@ nav a:hover::before{
 
 .works div.contents-1st{
     position: relative;
-    width: 80%; 
+    width: 80%;
     min-height: 50vh;
     height: auto;
     margin: 0 auto;
@@ -1068,3 +1068,17 @@ footer .sns-link-icon-side img{
     width: 30px;
 }
 
+.scroll-top{
+  position: fixed;
+  width: 80px;
+  height: 20px;
+  bottom: 30px;
+  right: 30px;
+  border-top: 2px solid black;
+  cursor: pointer;
+}
+
+.scroll-top p {
+  font-size: 15px;
+  color:black;
+}
