@@ -113,7 +113,7 @@ $(function () {
     }else {
         $(".scroll-down-btn").click(function () {
             var i = $(".scroll-down-btn").index(this)
-            var p = $(".profile").eq(i).offset().top - 80;
+            var p = $(".profile").eq(i).offset().top - 40;
             $('html,body').animate({ scrollTop: p }, 700);
             return false;
         });
