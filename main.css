@@ -386,7 +386,7 @@ nav a:hover::before{
   transition: .2s ease-in-out;
 }
 
-.display-space5 {
+.display-space {
     display: block;
     opacity: 0.8;
     -webkit-transition: .8s ease-in-out;
@@ -1169,4 +1169,264 @@ footer .sns-link-icon-side img{
 .scroll-top p {
   font-size: 15px;
   color:black;
+}
+
+
+@media screen and (max-width:700px){
+
+
+  /*ファーストビューSectionのスタイル*/
+  #firstview{
+      position: relative;
+      top:8vh;
+      width: 100vw;
+      height:92vh;
+  }
+
+  #firstview  img{
+      position: relative;
+      height: 180px;
+  }
+
+  #firstview .scroll-down-btn {
+      position: absolute;
+      top: 450px;
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  .display-none {
+      display: block;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  .space-of-firstview{
+      display: none;
+      position: relative;
+      width: 100vw;
+      height:0px;
+      display: flex;
+      opacity: 0;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  .firstview-scrolled-fin {
+      position: relative;
+      top:8vh;
+      width: 100vw;
+      height:92vh;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  .firstview-scrolled-5 {
+      position: relative;
+      top:8vh;
+      width: 100vw;
+      height:92vh;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  .firstview-scrolled-4 {
+      position: relative;
+      top:8vh;
+      width: 100vw;
+      height:92vh;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+  .firstview-scrolled-3 {
+      position: relative;
+      top:8vh;
+      width: 100vw;
+      height:92vh;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+  .firstview-scrolled-2 {
+      position: relative;
+      top:8vh;
+      width: 100vw;
+      height:92vh;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  .firstview-scrolled-2 ,.firstview-scrolled-3 ,.firstview-scrolled-4 ,.firstview-scrolled-5 ,.firstview-scrolled-fin img{
+    position: relative;
+    height: 200px;
+    top:0%;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+
+  .display-space {
+      display: none;
+      opacity: 0.8;
+      -webkit-transition: .8s ease-in-out;
+      -moz-transition: .8s ease-in-out;
+      transition: .8s ease-in-out;
+  }
+
+  /*プロフールSectionのスタイル*/
+
+  .profile{
+      display: flex;
+      position: relative;
+      width: 100vw;
+      height:196vh;
+      top: 8vh;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+
+  }
+
+  .contents-title{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+      z-index: 1000;
+      text-decoration: underline;
+  }
+
+  .profile div.contents-1st{
+      width:100vw;
+      height: 50%;
+      background-color: #EFEFEF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .profile div.contents-1st div.contents-box{
+      position: relative;
+      width: 240px;
+      height: 325px;
+      padding-top: 25px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url(img/profile-bg.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .profile div.contents-1st img.main-img{
+      position: relative;
+      width: 120px;
+      height:120px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+
+
+  .profile div.contents-2nd{
+      width:100vw;
+      height: 50%;
+      background-color: #E9EEEA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+
+  /*MAINWORKSの部分のcss*/
+
+  .mainworks{
+      position: relative;
+      top:8vh;
+      width: 100%;
+      min-width: 400px;
+      min-height: 100%;
+  }
+
+  .mainworks div.contents-1st{
+      position: relative;
+      width: 80%;
+      min-height: 50vh;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .mainworks div.contents-1st div.all-works{
+      width: 250px;
+      height: 300px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 150px;
+      z-index: 200;
+  }
+
+  .mainworks div.contents-2nd{
+      position: relative;
+      width: 80%;
+      min-height: 15vh;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .read-works{
+      position: absolute;
+      right: 100px;
+      height: 25px;
+      margin: 0 auto;
+      font-size: 25px;
+      text-align: right;
+      margin-bottom: 100px;
+      text-decoration: none;
+      color: black;
+
+  }
+
+
+  .read-works::after {
+    position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	content: ' ';
+  	width: 0;
+  	height: 2px;
+  	background-color: black;
+  	transition: .3s;
+  }
+  .read-works:hover::after {
+  	width: 100%;
+  }
+
+
+
+
 }
