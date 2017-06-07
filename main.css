@@ -420,7 +420,6 @@ nav a:hover::before{
 
 .profile div.contents-1st{
     width:50vw;
-    min-width: 400px;
     height: 65vh;
     background-color: #EFEFEF;
     display: flex;
@@ -477,9 +476,9 @@ nav a:hover::before{
 .readmore {
     position: absolute;
     right: -50px;
-    bottom: 20px;
+    bottom: 40px;
     width:80px;
-    font-size: 12px;
+    font-size: 17px;
     text-decoration: none;
     color: black;
     -moz-transform:    rotate( 90deg );
@@ -505,7 +504,6 @@ nav a:hover::before{
 
 .profile div.contents-2nd{
     width:50vw;
-    min-width: 400px;
     height: 65vh;
     background-color: #E9EEEA;
     display: flex;
@@ -543,7 +541,6 @@ nav a:hover::before{
 .mainworks{
     position: relative;
     width: 100%;
-    min-width: 400px;
     min-height: 65vh;
 }
 
@@ -692,7 +689,6 @@ nav a:hover::before{
 .secondview{
     position: relative;
     width: 100%;
-    min-width: 400px;
     min-height: 65vh;
     background-color: #F2F2F2;
 }
@@ -1164,6 +1160,7 @@ footer .sns-link-icon-side img{
   right: 30px;
   border-top: 2px solid black;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .scroll-top p {
@@ -1172,8 +1169,77 @@ footer .sns-link-icon-side img{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:700px){
 
+  header{
+      position: fixed;
+      width: 100vw;
+      height: 8vh;
+      background-color: white;
+      z-index: 1500;
+  }
+
+  header img{
+      position:absolute;
+      left:9px;
+      top:10px;
+      width: 27px;
+
+  }
+
+  #navToggle {
+      position:absolute;
+      right:9px;
+      top:10px;
+      width:27px;
+      height:8vh;
+      cursor:pointer;
+      z-index: 2000;
+      -webkit-transition: .35s ease-in-out;
+      -moz-transition: .35s ease-in-out;
+      transition: .35s ease-in-out
+  }
+
+  #navToggle div {
+      position:relative
+  }
+
+  #navToggle span {
+      display:block;
+      position:absolute;
+      width:100%;
+      border-bottom:solid 3px black;
+      -webkit-transition: .35s ease-in-out;
+      -moz-transition: .35s ease-in-out;
+      transition: .35s ease-in-out;
+  }
+
+  #navToggle span:nth-child(1) {top:0;}
+  #navToggle span:nth-child(2) {top:9px;}
+  #navToggle span:nth-child(3) {top:18px;}
+
+
+  #navToggle p {
+      display:block;
+      position:absolute;
+      width:100%;
+      top:22px;
+      font-size: 10px;
+  }
 
   /*ファーストビューSectionのスタイル*/
   #firstview{
@@ -1185,23 +1251,28 @@ footer .sns-link-icon-side img{
 
   #firstview  img{
       position: relative;
-      height: 180px;
+      height: 130px;
   }
 
   #firstview .scroll-down-btn {
       position: absolute;
-      top: 450px;
-      left: calc(50% - 100px);
-      width: 200px;
-      height: 50px;
+      top: 60vh;
+      left: calc(50% - 60px);
+      width: 120px;
+      height: 25px;
       background-color: black;
       color: white;
       cursor: pointer;
       text-align: center;
-      line-height: 50px;
       -webkit-transition: .8s ease-in-out;
       -moz-transition: .8s ease-in-out;
       transition: .8s ease-in-out;
+      font-size: 12px;
+      line-height: 25px;
+  }
+
+  .space-of-firstview{
+      display: none;
   }
 
   .display-none {
@@ -1209,75 +1280,6 @@ footer .sns-link-icon-side img{
       -webkit-transition: .8s ease-in-out;
       -moz-transition: .8s ease-in-out;
       transition: .8s ease-in-out;
-  }
-
-  .space-of-firstview{
-      display: none;
-      position: relative;
-      width: 100vw;
-      height:0px;
-      display: flex;
-      opacity: 0;
-      -webkit-transition: .8s ease-in-out;
-      -moz-transition: .8s ease-in-out;
-      transition: .8s ease-in-out;
-  }
-
-  .firstview-scrolled-fin {
-      position: relative;
-      top:8vh;
-      width: 100vw;
-      height:92vh;
-      -webkit-transition: .8s ease-in-out;
-      -moz-transition: .8s ease-in-out;
-      transition: .8s ease-in-out;
-  }
-
-  .firstview-scrolled-5 {
-      position: relative;
-      top:8vh;
-      width: 100vw;
-      height:92vh;
-      -webkit-transition: .8s ease-in-out;
-      -moz-transition: .8s ease-in-out;
-      transition: .8s ease-in-out;
-  }
-
-  .firstview-scrolled-4 {
-      position: relative;
-      top:8vh;
-      width: 100vw;
-      height:92vh;
-      -webkit-transition: .8s ease-in-out;
-      -moz-transition: .8s ease-in-out;
-      transition: .8s ease-in-out;
-  }
-  .firstview-scrolled-3 {
-      position: relative;
-      top:8vh;
-      width: 100vw;
-      height:92vh;
-      -webkit-transition: .8s ease-in-out;
-      -moz-transition: .8s ease-in-out;
-      transition: .8s ease-in-out;
-  }
-  .firstview-scrolled-2 {
-      position: relative;
-      top:8vh;
-      width: 100vw;
-      height:92vh;
-      -webkit-transition: .8s ease-in-out;
-      -moz-transition: .8s ease-in-out;
-      transition: .8s ease-in-out;
-  }
-
-  .firstview-scrolled-2 ,.firstview-scrolled-3 ,.firstview-scrolled-4 ,.firstview-scrolled-5 ,.firstview-scrolled-fin img{
-    position: relative;
-    height: 200px;
-    top:0%;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
   }
 
   .display-space {
@@ -1294,7 +1296,7 @@ footer .sns-link-icon-side img{
       display: flex;
       position: relative;
       width: 100vw;
-      height:196vh;
+      height:184vh;
       top: 8vh;
       align-items: center;
       flex-wrap: wrap;
@@ -1304,7 +1306,7 @@ footer .sns-link-icon-side img{
 
   .contents-title{
       position: absolute;
-      width: 100%;
+      width: 100vw;
       height: auto;
       top: 50px;
       margin-bottom: 20px;
@@ -1314,7 +1316,7 @@ footer .sns-link-icon-side img{
   }
 
   .profile div.contents-1st{
-      width:100vw;
+      width:100vw !important;
       height: 50%;
       background-color: #EFEFEF;
       display: flex;
@@ -1343,9 +1345,38 @@ footer .sns-link-icon-side img{
       margin-bottom: 15px;
   }
 
+  .readmore {
+      position: absolute;
+      right: -50px;
+      bottom: 20px;
+      width:80px;
+      font-size: 15px;
+      text-decoration: none;
+      color: black;
+      -moz-transform:    rotate( 90deg );
+      -webkit-transform: rotate( 90deg );
+      -o-transform:      rotate( 90deg );
+      -ms-transform:     rotate( 90deg );
+      transform:         rotate( 90deg );
+  }
+
+  .readmore::after {
+    position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	content: ' ';
+  	width: 0;
+  	height: 2px;
+  	background-color: black;
+  	transition: .3s;
+  }
+  .readmore:hover::after {
+  	width: 100%;
+  }
+
 
   .profile div.contents-2nd{
-      width:100vw;
+      width:100vw !important;
       height: 50%;
       background-color: #E9EEEA;
       display: flex;
@@ -1354,14 +1385,34 @@ footer .sns-link-icon-side img{
   }
 
 
+  .profile div.contents-2nd div.contents-box{
+      width:240px;
+      height: 325px;
+      background-color: #E9EEEA;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .profile div.contents-2nd img.main-img{
+      position: relative;
+      width: 120px;
+      height:120px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+
+
+
 
   /*MAINWORKSの部分のcss*/
 
   .mainworks{
       position: relative;
       top:8vh;
-      width: 100%;
-      min-width: 400px;
+      min-width: 300px !important;
+      width: 100vw !important;
       min-height: 100%;
   }
 
@@ -1378,17 +1429,17 @@ footer .sns-link-icon-side img{
   }
 
   .mainworks div.contents-1st div.all-works{
-      width: 250px;
+      width: 240px;
       height: 300px;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 150px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 50px;
       z-index: 200;
   }
 
   .mainworks div.contents-2nd{
       position: relative;
-      width: 80%;
+      width: 100vw;
       min-height: 15vh;
       height: auto;
       margin: 0 auto;
@@ -1399,18 +1450,17 @@ footer .sns-link-icon-side img{
   }
 
   .read-works{
-      position: absolute;
-      right: 100px;
-      height: 25px;
+      position: relative;
+      right: auto;
       margin: 0 auto;
-      font-size: 25px;
+      font-size: 20px;
       text-align: right;
-      margin-bottom: 100px;
+      margin-top: 10px;
+      margin-bottom: 50px;
       text-decoration: none;
       color: black;
 
   }
-
 
   .read-works::after {
     position: absolute;
@@ -1424,6 +1474,31 @@ footer .sns-link-icon-side img{
   }
   .read-works:hover::after {
   	width: 100%;
+  }
+
+
+  .scroll-top{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    bottom: 9px;
+    right: 9px;
+    border-top: 0px solid black;
+    background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .scroll-top p {
+    font-size: 0px;
+    color:white;
+  }
+
+  .scroll-top p::after {
+    content: "∧";
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
   }
 
 
