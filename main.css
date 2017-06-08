@@ -1058,13 +1058,7 @@ nav a:hover::before{
     height: 80px;
 }
 
-#side-contents-about .skills-code{
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-}
+
 
 #side-contents-about .skills-soft{
     position: relative;
@@ -1624,6 +1618,138 @@ footer .sns-link-icon-side img{
   }
 
 
+  /*about.htmlのスタイル*/
 
+  .topview-about{
+      position: fixed;
+      top: 8vh;
+      width: 100vw;
+      height:8vh;
+      background-color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+  }
+
+  .topview-about img{
+      position: relative;
+      height: auto;
+      width: 120px;
+      margin: auto auto;
+  }
+
+  .space-of-topview-about{
+      position: relative;
+      width: 100vw;
+      height:15vh;
+  }
+
+
+  .about{
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .about div.contents-1st{
+      position: relative;
+      width: 100vw;
+      height:90px;
+      background-image: url(img/top-view-about.png);
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+  }
+
+  .about div.contents-2nd{
+      position: relative;
+      width: 100vw;
+      height:auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .about div.contents-2nd div.contents-box{
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 240px;
+      max-height: 200%;
+      text-align: left;
+  }
+
+  .about div.contents-2nd div.contents-box p{
+      font-size: 11px;
+  }
+
+  .about div.contents-2nd div.contents-box p.name{
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing:1px;
+  }
+
+  .about div.contents-2nd div.contents-box p.job{
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing:1px;
+  }
+  .about .sns-link-icon-side img{
+      width: 20px;
+      height: auto;
+  }
+
+  .about ul{
+      position: relative;
+      left: -5px;
+      display: flex;
+      justify-content: left;
+      margin-bottom: 5px;
+  }
+
+  .about .sns-link-icon-side li{
+      margin-right: 3px;
+      margin-top: 10px;
+  }
+
+  .about div.skill-box{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about div.skill-box img{
+      width: 50px;
+      margin-top:7px;
+      margin-right: 7px;
+  }
+
+  /*フッターのスタイル*/
+
+  footer{
+      text-align: center;
+      font-size: 9px;
+      width: 100vw;
+      height: auto;
+      margin-top:100px;
+      margin-bottom: 20px;
+      clear: left;
+  }
+
+  footer .sns-link-icon-side{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+
+  footer .sns-link-icon-side img{
+      width: 30px;
+  }
 
 }
