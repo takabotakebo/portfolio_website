@@ -1578,6 +1578,148 @@ footer .sns-link-icon-side img{
       margin-right: 7px;
   }
 
+  /*myworksのスタイル*/
+
+  .topview-myworks{
+    position: relative;
+    width: 100vw;
+    height:auto;
+    background-color: white;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .topview-myworks h2{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+
+  .topview-myworks img{
+    position: relative;
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  .space-of-topviewmyworks {
+    position: relative;
+    width: 100vw;
+    height:calc(8vh);
+  }
+
+  .myworks {
+    background-color: white;
+  }
+
+  .myworks .contents-1st {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .myworks .contents-1st h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .br-none{
+    display: none;
+  }
+
+  .myworks .contents-1st .two-photo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .myworks .contents-1st img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .myworks .contents-1st p{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .myworks .contents-1st .two-photo img{
+    width: 48%;
+    height: calc(60vw * 0.48);
+    background-color:#EFEFEF;
+  }
+
+  .myworks .contents-1st .p-right{
+    position: relative;
+  }
+
+  .myworks .contents-1st .p-right p{
+    display: block;
+    margin-left: 0%;
+    text-align: left;
+  }
+
+
+  .myworks .contents-2nd{
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .myworks .contents-2nd .works-genre{
+      width: 70px;
+      height: auto;
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: solid 1px black;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .myworks .contents-2nd hr{
+    margin-bottom: 10px;
+  }
+
+  .myworks .contents-2nd .detail-box{
+      width: 100%;
+  }
+
+  .myworks .contents-2nd .detail-box .details{
+      display: inline-block;
+      margin-right: 20px;
+
+  }
+
+  .myworks .contents-2nd .detail-box .details img{
+      height: 15px;
+      display: inline-block;
+  }
+
+  .myworks .contents-2nd .detail-box .details div{
+      height: 24px;
+      display: inline-block;
+
+  }
+
+  .myworks .contents-2nd .detail-box .details div a{
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+  }
+
+  .myworks .contents-2nd .detail-box .details div a:hover{
+    color: #72C1B3;
+  }
+
+  .myworks .contents-2nd .detail-box .details div p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+
+
+
   /*フッターのスタイル*/
 
   footer{
