@@ -557,12 +557,19 @@ nav a:hover::before{
 }
 
 .mainworks div.contents-1st div.all-works{
+    position: relative;
     width: 250px;
     height: 300px;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 150px;
     z-index: 200;
+    overflow: hidden;
+}
+
+.mainworks div.contents-1st div.all-works a{
+    text-decoration: none;
+    color: black;
 }
 
 .mainworks div.contents-2nd{
@@ -711,12 +718,14 @@ nav a:hover::before{
 }
 
 .works div.contents-1st div.all-works{
+    position: relative;
     width: 250px;
     height: 300px;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 50px;
     z-index: 200;
+    overflow: hidden;
 }
 
 .works div.contents-1st div.all-works a{
@@ -724,6 +733,29 @@ nav a:hover::before{
     color: black;
 }
 
+.genres-photo {
+    width: 250px;
+    height: 250px;
+}
+
+.all-works .mask {
+	width:			250px;
+	height:			250px;
+	position:		absolute;
+	top:			-100%;	/* 枠の上に置いて表示させない */
+	left:			0;
+	background-color:	rgba(0,0,0,0.6);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.all-works:hover .mask {
+	top:			0;	/* 下に降りてくるように見せる */
+}
 
 /*about.htmlのスタイル*/
 
@@ -1460,6 +1492,7 @@ footer .sns-link-icon-side img{
       z-index: 200;
   }
 
+
   .works div.contents-1st div.all-works a{
       text-decoration: none;
       color: black;
@@ -1703,7 +1736,7 @@ footer .sns-link-icon-side img{
   }
 
   .myworks .contents-2nd .detail-box .details div a{
-    font-size: 12px;
+    font-size: 15px;
     line-height: 20px;
     color: black;
   }
