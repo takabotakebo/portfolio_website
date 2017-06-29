@@ -612,6 +612,11 @@ nav a:hover::before{
 	width: 100%;
 }
 
+.scroll-top span{
+  display: none;
+}
+
+
 /*works.htmlの部分のcss*/
 
 .topview{
@@ -1362,18 +1367,23 @@ footer .sns-link-icon-side img{
     background-color: rgba(0,0,0,0.7);
     cursor: pointer;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .scroll-top p {
+    display: none;
     font-size: 0px;
     color:white;
   }
 
-  .scroll-top p::after {
-    content: "∧";
+  .scroll-top span{
+    display: inline;
     color: white;
     font-size: 18px;
     line-height: 35px;
+    font-weight: lighter;
   }
 
 
