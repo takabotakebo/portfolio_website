@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Yaba Coin System</title>
+        <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+        <!--Drawerの奴 -->
+        <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <!--Drawerの奴 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <meta name="copyright" content="Takafumi Nakahara">
+        <!-- あとでやる
+        <meta property="og:url" content="https://tmusdia2017.github.io/iagw2017">
+        <meta property="og:image" content="https://tmusdia2017.github.io/iagw2017/img/ogp_image.jpg">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@iadiploma">
+        <meta name="twitter:title" content="首都大学東京 システムデザイン学部 インダストリアルアートコース 卒業・修了制作展 2017">
+        <meta name="twitter:description" content="首都大学東京システムデザイン学部インダストリアルアートコース・学域、2016年度卒業生の卒業・修了制作展のホームページです。開催日:平成29年2月6日(土)-2月8日(月)10:00-17:00 会場:首都大学東京 日野キャンパス 東京都日野市旭が丘6-6です。">
+        <meta name="twitter:image" content="https://tmusdia2017.github.io/iagw2017/img/ogp_image.jpg">
+        -->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper" class="animsition-overlay" data-animsition-overlay="true">
+
+            <header>
+                <a href="./index.html"><img src="img/potetologo.svg"></a>
+                <div id="navToggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>menu</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul style="list-style:none;">
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./works.html">WORKS</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--メインコンテンツ-->
+            <main role="main">
+                <!--ファーストビュー -->
+                <div class="space-of-topviewmyworks"></div>
+                <section class="topview-myworks">
+                  <h2>'15</h2>
+                    <img src="img/myworks/ycs-top.png">
+                </section>
+
+                <section class="secondview myworks">
+                    <div class="contents-1st">
+                        <h3>
+                            Yaba Coin System
+                        </h3>
+                        <p>自分に起きた出来事を5W1Hにわけて入力すると、感情の絶対値を計算してくれるメディアアートです。「情動を表現するインタラクティブアートの制作」と言う学校の課題で制作しました。感情には喜び・悲しみ・怒りなど様々な種類がありますが、それらをベクトルで表現し、そのスカラー値を「ヤバさ」で表現することで相互変換ができるのではないかと思い制作しました。算出された「ヤバさ」に相当する「ヤバコイン」を獲得し、「ヤバコイン」を使って他人の別感情ベクトルの出来事に変換することができます。</p>
+                        <img src="img/myworks/ycs-1.png">
+                        <img src="img/myworks/ycs-2.png">
+                        <img src="img/myworks/ycs-3.png">
+                        <div class="p-right">
+                          <p class="p-right">2年前に制作したもので、技術的に浅いところもあるので、現在はAPIや機械学習を用いて精度の高い算出や、実際にコインが出てくる実機の制作をチームで行っています。</p>
+                        </div>
+                    </div>
+                    <div class="contents-2nd">
+                          <div class="works-genre">
+                              <p>MediaArt</p>
+                          </div>
+                          <hr>
+                          <div class="detail-box">
+                              <div class="details">
+                                  <img src="img/detail-icon-callender.svg">
+                                  <div class="details-text">
+                                      <p class="jpn-font">3週間</p>
+                                  </div>
+                              </div>
+                              <div class="details">
+                                  <img src="img/detail-icon-team.svg">
+                                  <div class="details-text">
+                                      <p class="jpn-font">チーム作業:4人/ 担当箇所：Coding</p>
+                                  </div>
+                              </div>
+                              <div class="details">
+                                  <img src="img/detail-icon-tool.svg">
+                                  <div class="details-text">
+                                      <p>PHP/OpenFrameworks</p>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                </section>
+            </main>
+
+            <footer role="contentinfo">
+                <ul style="list-style:none;" class="sns-link-icon-side">
+                    <li><a href="https://ja-jp.facebook.com/kodawaripoteto"><img src="img/facebook-black.svg"></a></li>
+                    <li><a href="https://soundcloud.com/takabotakebo"><img src="img/soundcloud-black.svg"></a></li>
+                    <li><a href="https://github.com/takabotakebo"><img src="img/github-black.svg"></a></li>
+                </ul>
+                <p>©2017 TAKAFUMI NAKAHARA All rights reserved.</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
